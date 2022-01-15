@@ -3,17 +3,28 @@ I'am [Nagendra Bhat](https://www.linkedin.com/in/nagendrab/), founder and direct
 
 I'am a tech enthusiast and integration specialist having more than two decades of Software Development, Maintenance and Support experience.
 
-This repo is an effort to host code samples and learnings during development of Traml Data Platform
+This repo is an effort to host code samples and learnings during development of Traml Data Platform. Traml is developing tool to auto generate highly performant code skeletons that provides bells and whistles along with complete boiler plate. Customers can simply focus on their business functionalities.
 
 
 # Traml Data Platform 
-- Highly Scalable Multi Tenant platform supports zero data loss (RPO)
-- Supports Safestore, Transform, Delivery
-- Supports Safestore, ETL and Delivery
+- Highly Scalable Multi-Tenant platform supports zero data loss (RPO)
+- Supports Safe Store, Transform, Delivery
+- Supports Safe Store, ETL and Delivery
+- Predominantly uses Open Source Technologies
+
+# Technologies
+- Java 8+
+- Various Spring Boot features
+- Spark (Managed or with K8s operator)
+- Elastic Search
+- Mongo DB
+- Object Store (GCS, S3)
+- PostgreSQL
+- Other Analtyics technologies based on CSPs (GCP and AWS)
 
 Following is the list of features of core platform
 ## Data source
-- Originally Traml Data Platform suppored Email/SMTP integration with Google Apps Mail via SMTP adaptor as data source. 
+- Originally Traml Data Platform supported Email/SMTP integration with Google Apps Mail via SMTP adaptor as data source. 
 - Now supports Webhook, Messaging like MQs, Solace, Kafka based sources. 
 - Batch file
   - Throttling, scaling
@@ -21,7 +32,8 @@ Following is the list of features of core platform
   - Replay/Reprocess
 
 ## Storage
-- For transactional flow, preferes Postgres. 
+- For transactional flow, preferred storage is PostgreSQL. 
+- Metadata store is PostgreSQL but supports any DB supported by Spring Data JPA
 - Mongo is supported for both transactional and analytics use cases. 
 - Object Stores (GCS, S3)
 
@@ -30,6 +42,7 @@ Following is the list of features of core platform
 - On-demand:
   - Batch request/download
   - RESTful APIs
+    - Traml Query Language provides abstration over underlying storage (RDBMS, ElasticSearch)
   - RESTful request/event out
   
 ## Analytics
@@ -60,7 +73,7 @@ Following is the list of features of core platform
 - RBAC and ABAC
 - Key rotation and compromise management
  
-## Optimaziations
+## Optimizations
 - Data compressions via underlying technologies
 
 ## Self service
