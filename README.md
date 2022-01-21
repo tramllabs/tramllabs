@@ -20,7 +20,7 @@ This repo is an effort to host code samples and learnings during development of 
 - Mongo DB
 - Object Store (GCS, S3)
 - PostgreSQL
-- Other Analtyics technologies based on CSPs (GCP and AWS)
+- Other Analytics technologies based on CSPs (GCP and AWS)
 
 Following is the list of features of core platform
 ## Data source
@@ -42,7 +42,7 @@ Following is the list of features of core platform
 - On-demand:
   - Batch request/download
   - RESTful APIs
-    - Traml Query Language provides abstration over underlying storage (RDBMS, ElasticSearch)
+    - Traml Query Language provides abstraction over underlying storage (RDBMS, ElasticSearch)
   - RESTful request/event out
   
 ## Analytics
@@ -65,7 +65,7 @@ Following is the list of features of core platform
 ## Security
 - SSL (Mutual TLS wherever feasible)
 - Integration with Cloud KMS, Hashicorp Vault
-- Workload Idenitfy (GCP)
+- Workload Identity (GCP)
 - IAM (AWS)
 - API Keys
 - JWT
